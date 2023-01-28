@@ -1,3 +1,89 @@
-.container{
-    border: solid
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ariel;
+
+
 }
+
+body {
+ background-color:rgb(93, 103, 155);
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+ }
+
+ .container 
+ {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background:rgb(67, 74, 114);
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    box-shadow: 0 35px 55px rgb(184, 186, 200);
+ }
+ .container .left_Side
+ {
+    position: relative;
+    background:rgb(45, 51, 84);
+    padding: 40px;
+ }
+
+.profileText
+{
+    position: relative;
+    display:  flex-direction: table-column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(236, 242, 248);
+
+}
+.profileText .imageBx img
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText h2
+{
+color:rgb(236, 242, 248);
+font-size: 1.5em;
+margin-top: 20px;
+text-transform: uppercase;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 400;
+}
+.profileText h2 span
+{
+font-size: 0.6em;
+font-weight: 100;
+}
+ .container .right_Side
+ {
+    position: relative;
+    background:rgb(240, 238, 227)
+    padding: 40px;
+ }
+  
+  /* On screens that are 992px or less, set the background color to blue */
+  @media screen and (max-width: 992px) {
+    body {
+      background-color:rgb(93, 99, 133);
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: rgb(59, 67, 109);
+    }
+  }
